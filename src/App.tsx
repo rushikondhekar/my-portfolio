@@ -378,22 +378,36 @@ const Skills = () => {
           <div className="w-20 h-1.5 gold-gradient mx-auto rounded-full" />
         </div>
         <div className="grid md:grid-cols-4 gap-8">
-          {skills.map((skill, idx) => (
-            <motion.div
-              key={skill.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: idx * 0.1 }}
-              className="p-8 rounded-3xl bg-black border border-white/5 hover:border-primary/30 transition-all group card-3d"
-            >
-              <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-black transition-all">
-                {skill.icon}
-              </div>
-              <h3 className="text-xl font-display font-bold text-white mb-3">{skill.title}</h3>
-              <p className="text-white/50 text-sm leading-relaxed font-light">{skill.desc}</p>
-            </motion.div>
-          ))}
+          {skills.map((skill, idx) => {
+            const animations = [
+              { initial: { opacity: 0, x: -50 }, whileInView: { opacity: 1, x: 0 } },
+              { initial: { opacity: 0, x: 50 }, whileInView: { opacity: 1, x: 0 } },
+              { initial: { opacity: 0, y: -50 }, whileInView: { opacity: 1, y: 0 } },
+              { initial: { opacity: 0, y: 50 }, whileInView: { opacity: 1, y: 0 } },
+            ];
+            const animation = animations[idx % animations.length];
+
+            return (
+              <motion.div
+                key={skill.title}
+                initial={animation.initial}
+                whileInView={animation.whileInView}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: idx * 0.2,
+                  ease: [0.21, 0.47, 0.32, 0.98] 
+                }}
+                className="p-8 rounded-3xl bg-black border border-white/5 hover:border-primary/30 transition-all group card-3d"
+              >
+                <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-black transition-all">
+                  {skill.icon}
+                </div>
+                <h3 className="text-xl font-display font-bold text-white mb-3">{skill.title}</h3>
+                <p className="text-white/50 text-sm leading-relaxed font-light">{skill.desc}</p>
+              </motion.div>
+            );
+          })}
         </div>
 
         <motion.div 
