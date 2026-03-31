@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  --color-primary: #D4AF37;
+  --color-secondary: #C5A028;
+  --color-accent: #FFD700;
+  --color-background: #000000;
+  --color-text: #FFFFFF;
+  --color-navy: #1A1A1A;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text font-sans selection:bg-primary/30 selection:text-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-primary;
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.gold-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #C5A028 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(135deg, #D4AF37 0%, #FFD700 50%, #C5A028 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-filter {
+  filter: sepia(100%) saturate(300%) brightness(100%) hue-rotate(5deg);
+}
+
+.card-3d {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: translateZ(0);
+}
+
+.card-3d:hover {
+  transform: translateZ(20px) rotateX(5deg) rotateY(5deg);
+  box-shadow: 0 25px 50px -12px rgba(212, 175, 55, 0.25);
+}
