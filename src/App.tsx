@@ -201,6 +201,7 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
     { name: 'Certifications', href: '#certifications' },
+    { name: 'Experience', href: '#experience' },
     { name: 'Achievements', href: '#achievements' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -846,6 +847,8 @@ const Footer = () => {
           <a href="#home" className="hover:text-primary transition-colors">Home</a>
           <a href="#about" className="hover:text-primary transition-colors">About</a>
           <a href="#projects" className="hover:text-primary transition-colors">Projects</a>
+          <a href="#certifications" className="hover:text-primary transition-colors">Certifications</a>
+          <a href="#experience" className="hover:text-primary transition-colors">Experience</a>
           <a href="#achievements" className="hover:text-primary transition-colors">Achievements</a>
           <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
         </div>
