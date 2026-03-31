@@ -79,7 +79,7 @@ const PROJECTS: Project[] = [
     ],
     impact: "Risk flagging model projected reduction of default losses by ~INR 4.2 Cr annually on a simulated INR 500 Cr loan book; dashboard cut manual reporting effort by ~6 hours/week.",
     image: "https://cdn.pixabay.com/photo/2019/02/22/12/04/investing-4013413_1280.jpg",
-    link: "https://app.powerbi.com/view?r=eyJrIjoiYmE4Zjg4YjAtZjg4Zi00YmE4LThmYmEtZjg4Zjg4YjAtZjg4ZiIsImN0IjoiaHR0cHM6Ly9hcHAucG93ZXJiaS5jb20vIn0%3D" // Placeholder link
+    link: "https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/dashboard-and-report-examples/view/power-bi-banking-dashboard-by-okeh-dono-efasa"
   },
   {
     title: "Patient Readmission & Hospital Operational Efficiency",
@@ -93,7 +93,7 @@ const PROJECTS: Project[] = [
     ],
     impact: "Data-driven discharge protocol reduced projected average LOS by 0.8 days (INR 1.1 Cr annual saving); readmission prediction model reduced 30-day readmission rate from 14.7% to 9.3%.",
     image: "https://cdn.pixabay.com/photo/2024/12/31/06/47/ambulance-9301630_1280.jpg",
-    link: "https://app.powerbi.com/view?r=eyJrIjoiYmE4Zjg4YjAtZjg4Zi00YmE4LThmYmEtZjg4Zjg4YjAtZjg4ZiIsImN0IjoiaHR0cHM6Ly9hcHAucG93ZXJiaS5jb20vIn0%3D" // Placeholder link
+    link: "https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/dashboard-and-report-examples/view/health-care-analysis"
   }
 ];
 
@@ -136,21 +136,21 @@ const CERTIFICATIONS: Certification[] = [
     issuer: "Amazon Web Services",
     date: "2023",
     badge: "https://cdn-icons-png.flaticon.com/128/14777/14777106.png",
-    link: "#" // Add your link here
+    link: "https://drive.google.com/file/d/1ZFXw8dtqsjEaQAgn0jbeExch-4Cc04dh/view?usp=sharing"
   },
   {
     name: "Microsoft Power BI Data Analyst Associate (PL-300)",
     issuer: "Microsoft",
     date: "2022",
     badge: "https://cdn-icons-png.flaticon.com/128/732/732221.png",
-    link: "#" // Add your link here
+    link: "https://drive.google.com/file/d/1OLubvT0217Ogee8UhS-bLV94b6If1PhU/view?usp=sharing"
   },
   {
     name: "NDT Level II – UT, PT, MT, VI",
     issuer: "ASNT / PCN Certifying Authority",
     date: "2022",
     badge: "https://cdn.vectorstock.com/i/500p/90/54/ndt-letter-logo-design-on-black-background-vector-41859054.avif",
-    link: "#" // Add your link here
+    link: "https://drive.google.com/file/d/1xvxFfX7NuVLYDKOqXMo0_znTDBsl4Aps/view?usp=sharing"
   }
 ];
 
@@ -309,7 +309,7 @@ const Hero = () => {
               View Projects <ChevronRight size={20} />
             </a>
             <a 
-              href="#" 
+              href="https://drive.google.com/file/d/1zZShAjN4vKfIAa9qlnSBI88aaRkqtm9F/view?usp=drive_link" 
               target="_blank" 
               rel="noopener noreferrer"
               className="bg-white/5 text-white border border-white/10 px-10 py-5 rounded-2xl font-bold hover:bg-white/10 transition-all flex items-center gap-2 backdrop-blur-sm"
